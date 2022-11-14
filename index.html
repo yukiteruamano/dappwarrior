@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>WarriorCreator - DApp</title>
+
+    <link href='./style/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="./scripts/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>    
+
+  </head>
+
+  <body class="container">
+
+    <h1 class="page-header">WarriorCreator - DApp</h1>
+
+    <input type="button" value="Connect Wallet" onclick="getAccount();">
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Create your hero: </h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="setHero">Name:</label> </td>
+                <td>
+                  <input class="form-control" id="setHero">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="createHero()" class="btn btn-primary">Create Hero</a>
+        </form>
+      </div>
+    </div>
+ 
+    
+    <div class="row">
+      <div>
+        <h3 class="sub-header">My Hero: </h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td>Account: </td>
+                <td>
+                  <label id="accountHero">
+                </td>                          
+              </tr>
+              <tr>
+                <td>Hero Name: </td>
+                <td>
+                  <label id="nameHero">
+                </td>                          
+              </tr>
+              <tr>
+                <td>Level: </td>
+                <td>
+                  <label id="heroLevel">
+                </td>                          
+              </tr>
+              <tr>
+                <td>Attack: </td>
+                <td>
+                  <label id="heroAttack">
+                </td>                          
+              </tr>
+              <tr>
+                <td>Defense: </td>
+                <td>
+                  <label id="heroDefense">
+                </td>                          
+              </tr>
+              <tr>
+                <td>Last Training: </td>
+                <td>
+                  <label id="herolastTraining">
+                </td>                          
+              </tr>
+            </table>
+          </div>      
+          <a href="#" onclick="getMyHero()" class="btn btn-primary">Get info hero</a>          
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Train your hero: </h3>
+        <form class="form-inline" role="form">
+          <a href="#" onclick="trainHero()" class="btn btn-primary">Train your Hero</a>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Prepare a Battle: </h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="enemyAddress">Enemy address:</label> </td>
+                <td>
+                  <input class="form-control" id="enemyAddress">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="battleHero()" class="btn btn-primary">Battle!</a>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

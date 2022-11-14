@@ -1,0 +1,21 @@
+{
+  "name": "dappwarriors",
+  "version": "1.0.0",
+  "description": "Simple DApp example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "dapp",
+    "ethereum"
+  ],
+  "author": "José Maldonado",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "serve": "^14.1.1",
+    "web3": "^1.8.1"
+  }
+}
